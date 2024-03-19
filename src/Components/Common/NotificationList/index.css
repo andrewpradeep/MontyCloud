@@ -1,0 +1,64 @@
+#notification_container {
+    @apply fixed m-2 w-48 flex flex-col gap-2
+    top: 0;
+    right:0;
+    
+}
+
+@keyframes slidein {
+    from {
+      transform: translateX(110%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+.notification {
+    @apply flex p-4 bg-white border-gray-300 rounded-lg relative overflow-hidden;
+    
+    animation : 400ms slidein ease-in-out;
+
+
+    .close-icon { 
+        @apply absolute cursor-pointer;
+        top: 2px;
+        right: 5px;
+        &::after{
+            content: "\00D7";
+        }
+      }
+  }
+  
+  .notification:not(:last-child) {
+    @apply mb-2;
+  }
+  
+   
+
+  .notification::before {
+    @apply absolute;
+    content: "";
+    height: 2px;
+    width: calc(100% * var(--progress));
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .notification.info::before {
+    background-color: #2196f3;
+  }
+  
+  .notification.success::before {
+    background-color: #4caf50;
+  }
+  
+  .notification.warning::before {
+    background-color: #ff9800;
+  }
+  
+  .notification.error::before {
+    background-color: #f44336;
+  }

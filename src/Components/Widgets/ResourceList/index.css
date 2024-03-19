@@ -1,0 +1,7 @@
+.resource-header {
+    @apply flex justify-center items-center p-6 pb-2 border rounded-t-lg border-solid border-gray-300 border-0 border-b;
+
+    .resource-header-title {
+        @apply m-0 ;
+    }
+}
