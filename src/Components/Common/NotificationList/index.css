@@ -1,8 +1,7 @@
 #notification_container {
-    @apply fixed m-2 w-48 flex flex-col gap-2
+    @apply fixed m-2 w-48 flex flex-col gap-2;
     top: 0;
     right:0;
-    
 }
 
 @keyframes slidein {
@@ -17,9 +16,7 @@
 
 .notification {
     @apply flex p-4 bg-white border-gray-300 rounded-lg relative overflow-hidden;
-    
     animation : 400ms slidein ease-in-out;
-
 
     .close-icon { 
         @apply absolute cursor-pointer;
