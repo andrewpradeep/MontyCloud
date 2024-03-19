@@ -20,7 +20,7 @@ https://www.loom.com/share/37c9590bba204e168b69ccb8501ee818
 
 -   Recharts - While dealing with multitude of data it make sense to view the data in the form of charts to draw insights into it.
 
-P.S This website was done on a very short amount of time atmost I would have put 5 ot 6 hours working on it
+# P.S This website was done on a very short amount of time atmost I would have put 5 ot 6 hours working on it
 
 I would recommend checking out this website dataqueryrunner.netlify.app/
 
