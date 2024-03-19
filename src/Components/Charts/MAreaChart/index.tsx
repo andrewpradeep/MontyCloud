@@ -43,7 +43,7 @@ const MAreaChart = () => {
                 <YAxis />
 
                 <Tooltip
-                    formatter={(value, name, props) => {
+                    formatter={(value) => {
                         return [`${value}%`, "CPU usage"];
                     }}
                 />

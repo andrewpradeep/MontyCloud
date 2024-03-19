@@ -1,13 +1,11 @@
-import { Col, Row, Typography, theme } from "antd";
+import { Col, Row, Typography } from "antd";
 import "./index.css";
 
 export interface ResourceListProps {
     className?: string;
 }
-const { useToken } = theme;
 
 const ResourceList: React.FC<ResourceListProps> = ({ className }) => {
-    const { token } = useToken();
     return (
         <div className={`w-64 bg-white rounded-lg ${className} `}>
             <div className="resource-header">
