@@ -34,17 +34,15 @@ function App() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const types = Object.values(NotificationType);
-            const type = types[Math.floor(Math.random() * types.length)];
             const closable = !!Math.floor(Math.random() * 2);
-            const content =
+            const { content, type } =
                 NotificationMockData[
                     Math.floor(Math.random() * NotificationMockData.length)
-                ].content;
+                ];
             const notification1: INotification = {
                 id: Date.now().toString(36),
                 message: content,
-                type,
+                type: type as NotificationType,
                 closable,
                 timer: Math.floor(Math.random() * 2) || !closable ? 8 : 0,
                 read: false,

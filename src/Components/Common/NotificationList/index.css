@@ -1,5 +1,5 @@
 #notification_container {
-    @apply fixed m-2 w-48 flex flex-col gap-2;
+    @apply fixed m-2 w-64 flex flex-col gap-2;
     top: 0;
     right:0;
 }
